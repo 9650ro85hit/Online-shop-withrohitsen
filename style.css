@@ -1,0 +1,288 @@
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+///// */
+
+/* Style for product slider container */
+.products-sliderx {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    overflow: hidden; /* Hide overflow to create the carousel effect */
+  }
+  
+  /* Style for individual product slide */
+  .slidex {
+    /* width: calc(98.33% - 20px); */
+     /* Adjust the width for three slides */
+    margin: 10px; /* Add margin for spacing between slides */
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+  }
+  
+  /* ... (rest of your existing CSS) */
+  
+  /* Slider navigation controls */
+  .slider-controls {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .prev-button,
+  .next-button {
+    background-color: #f0ad4e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  /* ... (rest of your existing CSS) */
+  /* Style for individual product slide */
+
+
+
+.products-sliderx {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Style for individual product slide */
+.slidex {
+    /* width: calc(98.33% - 20px); */
+     /* Adjust the width as needed for your layout */
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Style for product image */
+.slidex .image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style for product name */
+.slidex .name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style for product price */
+.slidex .price {
+    margin-top: 5px;
+}
+
+/* Style for heart and eye icons */
+.slidex button[type="submit"] {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+.slidex a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style for quantity input and add to cart button */
+.slidex .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.slidex .qty {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.slidex .btn {
+    background-color: #f0ad4e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.slidex .btn:hover {
+    background-color: #ec971f;
+}
+
+/* Style for heart and eye icons */
+.slidex button[type="submit"],
+.slidex a {
+    display: none;
+    position: absolute;
+    top: 20px; 
+    
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+/* Show icons on hover */
+.slidex:hover button[type="submit"],
+.slidex:hover a {
+    display: block;
+}
+
+/* Position heart on the left */
+.slidex button[type="submit"] {
+    left: 10px;
+}
+
+/* Position eye on the right */
+.slidex a {
+    right: 10px;
+}
+.price{
+    font-size: 25px;
+    color: black;
+}
+
+.price span{
+    color: blue;
+    font-size: 25px;
+}
+
+/* Style for the slider container */
+.products-sliderx .w {
+    display: flex;
+    overflow: hidden; /* Hide overflowing content */
+    max-width: 100%; /* Ensure the slider container fits its parent */
+}
+
+/* Style for individual product slide */
+.products-sliderx .slidex {
+    flex: 0 0 33.33%; /* Set the width of each slide (adjust as needed) */
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    margin-right: 20px; /* Spacing between slides */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Style for product image */
+.products-sliderx .slidex .image {
+    max-width: 100%;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Style for heart and eye icons */
+.products-sliderx .slidex button[type="submit"],
+.products-sliderx .slidex a {
+    display: none;
+    position: absolute;
+    top: 10px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+/* Show icons on hover */
+.products-sliderx .slidex:hover button[type="submit"],
+.products-sliderx .slidex:hover a {
+    display: block;
+}
+
+/* Position heart on the left */
+.products-sliderx .slidex button[type="submit"] {
+    left: 10px;
+}
+
+/* Position eye on the right */
+.products-sliderx .slidex a {
+    right: 10px;
+}
+
+/* Enlarge slides on hover */
+.products-sliderx .slidex:hover {
+    transform: scale(1.05); /* Scale the slide up slightly on hover */
+}
+
+
+
+.products-sliderx .w {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .products-sliderx .slidex {
+    flex: 0 0 calc(33.33% - 20px); /* Set the width of each slide (adjust as needed) */
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    margin-right: 20px; /* Spacing between slides */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Ensure images cover the full width of each slide */
+  .products-sliderx .slidex .image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }

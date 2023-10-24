@@ -1,0 +1,18 @@
+
+
+.form_container{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top:15rem;
+    background-color: rgba(230, 217, 217, 0.87);
+}
+
+body{
+background-color: rgba(107, 97, 97, 0.87);
+}
+
+
+#label{
+text-align:center;
+}
+
